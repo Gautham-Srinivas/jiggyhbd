@@ -143,7 +143,20 @@
 		parallax();
 		// pieChart();
 		skillsWayPoint();
+		setPage();
 	});
 
+	var setPage = function(){
+		$('#wishTxt').hide();
+		$('#cake').hide();
+		$('.container-wishes').hide();
+	}
 
 }());
+
+function reveal(){
+		$('#reveal').hide();
+		$('.container-countdown').hide();
+		$('#wishTxt').show();
+		$('#cake').show();
+}
