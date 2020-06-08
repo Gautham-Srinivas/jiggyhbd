@@ -15,8 +15,8 @@ let countDown = new Date('Jun 15, 2020 00:00:00').getTime(),
         
        
       //do something later when date is reached
-    //  if (distance < 0) {
-      //  document.getElementsByName('cake').style.visibility  = "visible";
-      //}
+      if (distance < 0) {
+        document.getElementsByName('reveal').style.visibility  = "visible";
+      }
 
     }, second)

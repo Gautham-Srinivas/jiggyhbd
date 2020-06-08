@@ -161,6 +161,7 @@
 
 function reveal(){
 		$('#reveal').hide();
+		$('.loader').hide();
 		$('.container-countdown').hide();
 		autoType(".wish1",200);
 		//$('#wishTxt1').show();
