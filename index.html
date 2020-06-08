@@ -22,7 +22,6 @@
       };
 	</script> -->
 		<script>
-     
     </script>
 		<!-- Animate.css -->
 		<link rel="stylesheet" href="css/animate.css" />
@@ -48,7 +47,7 @@
 	<body>
 		<div>
 			<div class="container-countdown">
-				<h3>Countdown to Jiggy's birthday!!!</h3>
+				<h3 class="text-js headline">It's almost here!!!</h3>
 				<ul class="timer">
 					<li>
 						<span id="days"></span>days
@@ -65,13 +64,13 @@
         </ul>
         <button onclick='reveal()' id='reveal'> Reveal</button>
 			</div>
-			<div>
-				<h3 id="wishTxt" class="container-wish">Make a wish..
-        .. and blow out the candle </h3>
+			<div class="container-wish">
+        <div class="wish1">  <h3 id="wishTxt1" class="text-js">Make a wish...and blow out the candle </h3></div>
+        <div class="wish2">  <h3 id="wishTxt2" class="text-js">Your wish will come true...</h3></div>     
 			</div>
 			<div class="container default-cake" name='cake' id="cake">
 				<div class="glow" id="glow"></div>
-				<div id="candle">
+				<div id="candle" class="candle">
 					<div class="stripe"></div>
 					<div class="stripe"></div>
 					<div class="stripe"></div>
@@ -109,7 +108,7 @@
 					<div class="cake-layer middle-layer"></div>
 					<div class="cake-layer"></div>
 				</div>
-				<div class="wish"></div>
+				<div class="wish"><h3 class="text-js">Happy birthday Jiggy!!!</h3></div>
 			</div>
 			<div class="container-wishes" style="display:visible">
         <div class="slideDiv">
@@ -214,7 +213,8 @@
 					<script src="js/jquery.easypiechart.min.js"></script>
 					<!--confetti-->
 					<script src="js/confetti.js"></script>
-					<script src="js/slider.js"></script>
+          <script src="js/slider.js"></script>
+          <script src="js/type.js"></script>
 					<!-- Google Map -->
 					<!-- <script src="js/google_map.js"></script> -->
 					<!-- Main -->

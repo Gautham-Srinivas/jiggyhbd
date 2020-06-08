@@ -1,5 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Ubuntu);
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap");
+
+
 * {
     margin: 0;
     padding: 0;
@@ -17,12 +18,13 @@
     --color-red-velvet: #681d1d;
     --color-red-velvet-icing: #dcc6c0;
     --color-text-base: #d0f4ff;
-    --font-primary: "Ubuntu", sans-serif;
+    --font-primary: Comfortaa, cursive;
 }
 body {
     background: var(--color-primary);
     font-family: var(--font-primary);
-    font-size: 100%;
+    font-style: normal;
+    font-weight: 100;
 }
 
 #reveal{
@@ -287,7 +289,7 @@ h1 {
   text-align: center;
   font-size: 2em;
   font-weight: 100;
-  font-family: 'Ubuntu';
+  font-family: var(--font-primary);
   letter-spacing: 0.1em;
   color: white;
   text-shadow: 0 0 20px black;
@@ -503,7 +505,7 @@ h1 {
   color: white;
   text-shadow: 0 0 20px black;
   opacity: 0.8;
-  font-family: Ubuntu;
+  font-family: var(--font-primary);
   text-align: center;
 }
 
@@ -511,7 +513,7 @@ h1 {
   color: white;
   text-shadow: 0 0 20px black;
   opacity: 0.8;
-  font-family: Ubuntu;
+  font-family: var(--font-primary);
   text-align: center;
 }
 
@@ -519,7 +521,7 @@ h1 {
   color: white;
   text-shadow: 0 0 20px black;
   opacity: 0.8;
-  font-family: Ubuntu;
+  font-family: var(--font-primary);
   text-align: center;
 }
 
@@ -529,7 +531,7 @@ h1 {
   color: white;
   text-shadow: 0 0 20px black;
   opacity: 0.8;
-  font-family: Ubuntu;
+  font-family: var(--font-primary);
   text-align: center;
   padding: 7em 0; 
   left: calc(50%);
@@ -712,3 +714,26 @@ li span {
 
 
 
+.text-js {
+  opacity: 0;
+}
+.cursor {
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: -5px;
+  width: 2px;
+ /* Change colour of Cursor Here */
+  background-color: white;
+  z-index: 1;
+  animation: flash 0.5s none infinite alternate;
+}
+@keyframes flash {
+  0% {
+    opacity: 1;
+ }
+  100% {
+    opacity: 0;
+ }
+}

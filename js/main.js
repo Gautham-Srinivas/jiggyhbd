@@ -138,7 +138,7 @@
 	$(function(){
 		contentWayPoint();
 		goToTop();
-		loaderPage();
+		loaderPage(); 
 		fullHeight();
 		parallax();
 		// pieChart();
@@ -147,7 +147,12 @@
 	});
 
 	var setPage = function(){
-		$('#wishTxt').hide();
+		$( window ).on( "load", function() {
+			console.log('loaded win')
+			autoType(".container-countdown",200);
+		});
+		//$('#wishTxt1').hide();
+		//$('#wishTxt2').hide();
 		$('#cake').hide();
 		$('.container-wishes').hide();
 	}
@@ -157,6 +162,8 @@
 function reveal(){
 		$('#reveal').hide();
 		$('.container-countdown').hide();
-		$('#wishTxt').show();
-		$('#cake').show();
+		autoType(".wish1",200);
+		//$('#wishTxt1').show();
+		//autoType(".container-wish",200);
+		randomCake();
 }
